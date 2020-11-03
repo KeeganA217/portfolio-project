@@ -1,13 +1,14 @@
 :root {
-  --main-bg-color: #212f3d;
+  --main-bg-color: #2e4053;
   --accent-color: #48c9b0;
   --text-color: #616a6b;
+  --card-front-color: #212f3d;
+  --card-back-color: #e5e7e9;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: Var(--main-bg-color);
-  overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -73,5 +74,200 @@ a:hover::before {
 h1 {
   color: white;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 16rem;
+}
+
+.card {
+  width: 650px;
+  height: 500px;
+  margin: auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.left-div {
+  background-color: var(--card-front-color);
+  height: 470px;
+  width: 400px;
+  margin: 15px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+}
+
+.right-div {
+  background-color: var(--card-front-color);
+  height: 470px;
+  width: 200px;
+  margin: 15px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  color: white;
+  padding: 35px 0px;
+  font-size: 40px;
+}
+
+.social:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.contact {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.contact-info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contact-header {
+  padding: 0;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid white;
+}
+
+.contact-paragraph {
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.page-title {
+  margin: 6rem 0 2rem 0;
+}
+
+.projects-card {
+  margin: auto;
+  padding-top: 4rem;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 50px;
+}
+
+.project-front {
+  height: 290px;
+  width: 490px;
+  margin: auto;
+  position: absolute;
+  border-radius: 4px;
+  display: flex;
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  background-color: var(--card-front-color);
+  backface-visibility: hidden;
+  transition: transform 0.7s linear;
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.project-back {
+  height: 290px;
+  width: 490px;
+  margin: auto;
+  position: absolute;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  background-color: var(--card-back-color);
+  backface-visibility: hidden;
+  transition: transform 0.5s linear;
+  transform: perspective(600px) rotateX(180deg);
+}
+
+.project:hover > .project-front {
+  transform: perspective(600px) rotateX(-180deg);
+}
+
+.project:hover > .project-back {
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.project-front > h3 {
+  color: var(--accent-color);
+  margin: auto;
+}
+
+.project-back > p {
+  margin: auto;
+  padding: 0 20px;
+  line-height: 1.5rem;
+  color: var(--text-color);
+}
+.project-back > button {
+  margin: auto;
+  width: 200px;
+  height: 35px;
+  border-radius: 6px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+}
+
+.project-back > button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #424949;
+}
+
+.home-card {
+  margin: 35px auto 0 auto;
+  width: 1000px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 10px;
+}
+
+.photo-card {
+  display: flex;
+  position: relative;
+}
+
+img {
+  width: 180px;
+  height: auto;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.about-card {
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  line-height: 1.6rem;
+  font-weight: 200;
+  justify-content: center;
+  align-items: center;
+}
+.skills-card {
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  background-color: var(--card-back-color);
+  height: 85px;
+  width: 1000px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-card img {
+  height: 60px;
+  width: 60px;
+  padding: 0 30px;
+  margin: 0;
 }

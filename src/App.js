@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/layout/Navbar";
-import home from "./components/pages/home";
+import about from "./components/pages/about";
 import projects from "./components/pages/projects";
 import contact from "./components/pages/contact";
 
@@ -15,8 +15,8 @@ const App = () => {
         <Navbar />
         <div className="container">
           <Switch>
-            <Route exact path={"/"} component={home} />
-            <Route exact path={"/projects"} component={projects} />
+            <Route exact path={"/"} component={projects} />
+            <Route exact path={"/about"} component={about} />
             <Route exact patch={"/contact"} component={contact} />
           </Switch>
         </div>
