@@ -1,6 +1,27 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 const contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "keegan217",
+        "template_pk0xzms",
+        e.target,
+        "user_oKIPhGo0ywXSCRteEikb8"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div className="contact-page">
       <h1 className="page-title">How To Reach Me</h1>
@@ -16,7 +37,7 @@ const contact = () => {
             <p className="contact-paragraph">St. Cloud, MN</p>
           </div>
         </div>
-        <div className="right-div">
+        <div className="middle-div">
           <a
             href="https://github.com/KeeganA217"
             target="_blank"
@@ -31,9 +52,39 @@ const contact = () => {
           >
             <i className="fab fa-instagram social"></i>
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="/#" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin social"></i>
           </a>
+        </div>
+        <div className="right-div">
+          <p>...Or let me contact you!</p>
+          <form onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+              className="input-item"
+              autoComplete="chrome-off"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Email Address"
+              required
+              className="input-item"
+              autoComplete="chrome-off"
+            />
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Message..."
+              required
+              className="input-item"
+            ></textarea>
+            <input type="submit" value="Send" className="input-item btn" />
+          </form>
         </div>
       </div>
     </div>

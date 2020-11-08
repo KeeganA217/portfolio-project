@@ -1,9 +1,6 @@
 :root {
-  --main-bg-color: #2e4053;
-  --accent-color: #48c9b0;
-  --text-color: #616a6b;
-  --card-front-color: #212f3d;
-  --card-back-color: #e5e7e9;
+  --main-bg-color: #f1f6fa;
+  --accent-color: #a5d898;
 }
 
 body {
@@ -62,8 +59,8 @@ a:hover::before {
   position: absolute;
   top: 25px;
   left: 20px;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   width: 140px;
   height: 80px;
   border-radius: 6px;
@@ -72,34 +69,35 @@ a:hover::before {
 }
 
 h1 {
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 16rem;
 }
 
 .card {
-  width: 650px;
+  width: 60%;
   height: 500px;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 5rem;
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 40% 20% 40%;
+  column-gap: 1rem;
 }
 
 .left-div {
-  background-color: var(--card-front-color);
+  background-color: black;
   height: 470px;
   width: 400px;
-  margin: 15px;
+  margin: auto;
   border-radius: 4px;
   box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
 }
 
-.right-div {
-  background-color: var(--card-front-color);
+.middle-div {
+  background-color: black;
   height: 470px;
   width: 200px;
-  margin: 15px;
+  margin: auto;
   border-radius: 4px;
   box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
   display: flex;
@@ -116,6 +114,7 @@ h1 {
 
 .social:hover {
   cursor: pointer;
+  color: var(--accent-color);
   transform: scale(1.1);
 }
 
@@ -142,85 +141,124 @@ h1 {
 
 .contact-paragraph {
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 2rem 0;
+}
+
+.right-div {
+  background-color: black;
+  height: 470px;
+  width: 400px;
+  margin: 15px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+}
+
+.right-div p {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  padding: 35px 0 0 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+input,
+textarea {
+  height: 22px;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid var(--accent-color);
+  height: 25px;
+}
+
+textarea {
+  color: white;
+}
+
+.input-item {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #cccccc;
+  border-radius: 3px;
+  padding: 0;
+  color: black;
+  height: 25px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  font-style: italic;
+  transform: scale(1.01);
+}
+
+.btn:focus {
+  border: none;
 }
 
 .page-title {
   margin: 6rem 0 2rem 0;
 }
 
-.projects-card {
-  margin: auto;
-  padding-top: 4rem;
-  width: 1000px;
-  height: 600px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding-bottom: 50px;
+.projects-page {
+  margin-bottom: 4rem;
 }
 
-.project-front {
-  height: 290px;
-  width: 490px;
+.projects-title {
+  margin-bottom: 6rem;
+}
+
+.project {
+  border-bottom: 3px solid var(--accent-color);
+  width: 80%;
   margin: auto;
-  position: absolute;
-  border-radius: 4px;
+  height: 300px;
+  color: black;
   display: flex;
-  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
-  background-color: var(--card-front-color);
-  backface-visibility: hidden;
-  transition: transform 0.7s linear;
-  transform: perspective(600px) rotateX(0deg);
 }
 
-.project-back {
-  height: 290px;
-  width: 490px;
-  margin: auto;
-  position: absolute;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
-  background-color: var(--card-back-color);
-  backface-visibility: hidden;
-  transition: transform 0.5s linear;
-  transform: perspective(600px) rotateX(180deg);
+.project h2 {
+  border: 2px solid black;
+  margin: 0 30px;
+  padding: 20px;
+  background-color: black;
+  color: white;
 }
 
-.project:hover > .project-front {
-  transform: perspective(600px) rotateX(-180deg);
-}
-
-.project:hover > .project-back {
-  transform: perspective(600px) rotateX(0deg);
-}
-
-.project-front > h3 {
-  color: var(--accent-color);
+.project-left {
   margin: auto;
 }
 
-.project-back > p {
-  margin: auto;
-  padding: 0 20px;
-  line-height: 1.5rem;
-  color: var(--text-color);
-}
-.project-back > button {
-  margin: auto;
-  width: 200px;
-  height: 35px;
-  border-radius: 6px;
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  border: none;
+.project p {
+  margin: 5rem 0 3rem 2rem;
 }
 
-.project-back > button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: #424949;
+.project-right a {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0 10px;
+  float: right;
+}
+
+.project-right a:hover {
+  border: 1px solid black;
+  color: white;
+  background-color: black;
 }
 
 .home-card {
@@ -238,19 +276,18 @@ h1 {
 }
 
 img {
-  width: 180px;
-  height: auto;
+  width: 190px;
+  height: 190px;
   margin: auto;
-  border-radius: 6px;
+  border-radius: 50%;
 }
 
 .about-card {
-  color: white;
+  color: black;
   height: 100%;
   width: 100%;
   display: flex;
-  line-height: 1.6rem;
-  font-weight: 200;
+  line-height: 1.7rem;
   justify-content: center;
   align-items: center;
 }

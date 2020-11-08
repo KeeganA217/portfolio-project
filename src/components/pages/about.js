@@ -22,6 +22,8 @@ const home = () => {
         <img src="/images/JS.png" alt="JS" />
         <img src="/images/React.png" alt="React" />
         <img src="/images/Node.png" alt="Node.js" />
+        <img src="/images/Mongo.png" alt="MongoDB" />
+        <img src="/images/Bootstrap.png" alt="Bootstrap" />
       </div>
     </div>
   );
