@@ -12,11 +12,20 @@ const Projects = () => {
         amount: 2,
       },
     });
+    gsap.from(".click", {
+      opacity: 0,
+      x: 100,
+      stagger: 0.3,
+      delay: 0.3,
+      duration: 1.2,
+    });
   }, []);
 
   return (
     <div className="projects-page">
-      <h1 className="page-title projects-title">Sample Projects</h1>
+      <div className="page-title">
+        <h1>Sample Projects</h1>
+      </div>
       <div className="project">
         <div className="project-left">
           <h2>The Recipe Rolodex</h2>
@@ -35,6 +44,7 @@ const Projects = () => {
             href="https://github.com/KeeganA217/recipe-rolodex"
             target="_blank"
             rel="noopener noreferrer"
+            className="click"
           >
             View Source Code
           </a>
@@ -42,6 +52,7 @@ const Projects = () => {
             href="https://keegana217.github.io/recipe-rolodex/"
             target="_blank"
             rel="noopener noreferrer"
+            className="click"
           >
             View Live Project
           </a>
@@ -61,10 +72,20 @@ const Projects = () => {
             suscipit? Fuga commodi repellat molestiae eveniet numquam illo quas.
             Eligendi.
           </p>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="click"
+          >
             View Source Code
           </a>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="click"
+          >
             View Live Project
           </a>
         </div>
@@ -83,10 +104,20 @@ const Projects = () => {
             suscipit? Fuga commodi repellat molestiae eveniet numquam illo quas.
             Eligendi.
           </p>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="click"
+          >
             View Source Code
           </a>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="click"
+          >
             View Live Project
           </a>
         </div>
@@ -105,10 +136,20 @@ const Projects = () => {
             suscipit? Fuga commodi repellat molestiae eveniet numquam illo quas.
             Eligendi.
           </p>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="click"
+          >
             View Source Code
           </a>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="click"
+          >
             View Live Project
           </a>
         </div>

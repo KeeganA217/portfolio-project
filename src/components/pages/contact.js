@@ -30,20 +30,19 @@ const Contact = () => {
   useEffect(() => {
     gsap.from(left.current, {
       opacity: 0,
-      duration: 1.7,
+      duration: 1.9,
       x: 200,
       ease: "power1",
     });
     gsap.from(middle.current, {
       opacity: 0,
       duration: 1.5,
-      y: -150,
-      ease: "power1",
-      delay: 0.3,
+      y: -190,
+      delay: 0.2,
     });
     gsap.from(right.current, {
       opacity: 0,
-      duration: 1.7,
+      duration: 1.9,
       x: -200,
       ease: "power1",
     });
@@ -51,7 +50,9 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <h1 className="page-title">How To Reach Me</h1>
+      <div className="page-title">
+        <h1>How To Reach Me</h1>
+      </div>
       <div className="card">
         <div className="left-div" ref={left}>
           <div className="contact-info">

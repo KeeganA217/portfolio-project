@@ -13,21 +13,33 @@ const Home = () => {
     gsap.from(".icon", {
       y: 80,
       opacity: 0,
-      duration: 0.7,
+      duration: 2.5,
       delay: 0.2,
+      ease: "elastic.out(1, 0.3)",
       stagger: {
         amount: 0.2,
         from: "center",
       },
     });
+    gsap.from(".image", {
+      scale: 0,
+      duration: 1.7,
+      x: -100,
+    });
   }, []);
 
   return (
     <div className="about-me-page">
-      <h1 className="page-title">Get To Know Me</h1>
+      <div className="page-title">
+        <h1>Get To Know Me</h1>
+      </div>
       <div className="home-card">
         <div className="photo-card">
-          <img src="/images/photo 1.jpg" alt="image not found..." />
+          <img
+            src="/images/photo 1.jpg"
+            alt="image not found..."
+            className="image"
+          />
         </div>
         <div className="about-card">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
