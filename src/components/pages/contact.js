@@ -51,7 +51,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="page-title">
-        <h1>How To Reach Me</h1>
+        <h1>Lets Get To Work!</h1>
       </div>
       <div className="card">
         <div className="left-div" ref={left}>
@@ -72,13 +72,6 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <i className="fab fa-github social"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/its_keegan_adams/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-instagram social"></i>
           </a>
           <a href="/#" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin social"></i>

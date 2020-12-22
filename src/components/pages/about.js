@@ -21,26 +21,14 @@ const Home = () => {
         from: "center",
       },
     });
-    gsap.from(".image", {
-      scale: 0,
-      duration: 1.7,
-      x: -100,
-    });
   }, []);
 
   return (
     <div className="about-me-page">
       <div className="page-title">
-        <h1>Get To Know Me</h1>
+        <h1>What Would You Like To Know?</h1>
       </div>
       <div className="home-card">
-        <div className="photo-card">
-          <img
-            src="/images/photo 1.jpg"
-            alt="image not found..."
-            className="image"
-          />
-        </div>
         <div className="about-card">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
           delectus quaerat commodi obcaecati cumque animi reprehenderit aliquam
@@ -57,6 +45,9 @@ const Home = () => {
         <img src="/images/Node.png" alt="Node.js" className="icon" />
         <img src="/images/Mongo.png" alt="MongoDB" className="icon" />
         <img src="/images/Bootstrap.png" alt="Bootstrap" className="icon" />
+        <img src="/images/Materialize.png" alt="Materialize" className="icon" />
+        <img src="/images/gsap.png" alt="Greensock" className="icon" />
+        <img src="/images/postgres.png" alt="PostgreSQL" className="icon" />
       </div>
     </div>
   );

@@ -31,7 +31,24 @@ const Navbar = () => {
           <NavLink
             to="/"
             exact
-            activeStyle={{ fontWeight: "bold", color: "black" }}
+            activeStyle={{
+              fontWeight: "bold",
+              color: "black",
+              fontSize: "20px",
+            }}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className="change">
+          <NavLink
+            to="/projects"
+            exact
+            activeStyle={{
+              fontWeight: "bold",
+              color: "black",
+              fontSize: "20px",
+            }}
           >
             View Projects
           </NavLink>
@@ -39,7 +56,11 @@ const Navbar = () => {
         <li className="change">
           <NavLink
             to="/about"
-            activeStyle={{ fontWeight: "bold", color: "black" }}
+            activeStyle={{
+              fontWeight: "bold",
+              color: "black",
+              fontSize: "20px",
+            }}
           >
             About Me
           </NavLink>
@@ -47,7 +68,11 @@ const Navbar = () => {
         <li className="change">
           <NavLink
             to="/contact"
-            activeStyle={{ fontWeight: "bold", color: "black" }}
+            activeStyle={{
+              fontWeight: "bold",
+              color: "black",
+              fontSize: "20px",
+            }}
           >
             Get in Touch
           </NavLink>
