@@ -5,9 +5,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: Var(--main-bg-color);
   margin: 0;
   padding: 0;
+  background-color: var(--main-bg-color);
 }
 
 header {
@@ -61,7 +61,10 @@ a:hover {
   top: 25px;
   left: 20px;
   color: black;
-  border: 2px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
   width: 140px;
   height: 80px;
   border-radius: 6px;
@@ -72,6 +75,8 @@ a:hover {
 h1 {
   color: black;
   text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  font-family: "Nunito", sans-serif;
 }
 
 .card {
@@ -250,6 +255,15 @@ textarea {
   margin: auto;
 }
 
+.project-left img {
+  box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
+  transition: 0.4s ease;
+}
+
+.project-left img:hover {
+  transform: scale(2);
+}
+
 .project p {
   margin: 5rem 0 3rem 2rem;
 }
@@ -268,25 +282,65 @@ textarea {
   background-color: black;
 }
 
-.home-card {
-  margin: 35px auto 0 auto;
-  width: 1000px;
-  height: 360px;
+.home-page {
   display: grid;
-  grid-template-columns: 30% 70%;
-  margin-bottom: 10px;
+  grid-template-columns: 50% 50%;
+  border-radius: 4px;
+  width: 75%;
+  height: 500px;
+  margin: 5rem auto;
+  background-image: url("/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 10px -4px rgba(0, 0, 0, 0.5);
 }
 
-.photo-card {
+.home-title {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.title-accent-1 {
+  font-style: italic;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.title-accent-2 {
+  color: #8fbd84;
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.home-image {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
+.home-image img {
+  width: 60%;
+  border: 6px solid black;
+  border-radius: 3px 20px;
+  box-shadow: 5px 5px 8px -4px rgba(0, 0, 0, 0.75);
+}
+
+.about-card-main {
+  margin: 35px auto 3rem auto;
+  height: 50%;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.project-image {
   width: 190px;
-  height: 190px;
+  height: 140px;
   margin: auto;
-  border-radius: 50%;
 }
 
 .about-card {
@@ -294,17 +348,29 @@ img {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   line-height: 1.7rem;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 2rem;
 }
+
+.about-card p {
+  margin-bottom: 2rem;
+}
+
+.about-title-1 {
+  text-align: left;
+  border-bottom: 1px solid black;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .skills-card {
   border-radius: 4px;
   box-shadow: 3px 3px 8px -4px rgba(0, 0, 0, 0.75);
   background-color: var(--card-back-color);
-  height: 85px;
-  width: 1000px;
-  margin: 0 auto 40px auto;
+  height: 80px;
+  width: 70%;
+  margin: 1rem auto 40px auto;
   display: flex;
   align-items: center;
   justify-content: center;

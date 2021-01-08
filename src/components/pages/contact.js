@@ -38,7 +38,6 @@ const Contact = () => {
       opacity: 0,
       duration: 1.5,
       y: -190,
-      delay: 0.2,
     });
     gsap.from(right.current, {
       opacity: 0,
