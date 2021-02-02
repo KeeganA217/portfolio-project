@@ -36,6 +36,9 @@ const Home = () => {
         <div className="title-section">
           <span className="title-accent-2">Full Stack </span>
         </div>
+        <div className="title-section">
+          developer. <br></br>
+        </div>
         <div className="title-section-link title-section">
           {" "}
           <strong>

@@ -46,28 +46,35 @@ const Home = () => {
         <div className="about-card">
           <h3 className="about-title-1">A little about me..</h3>
           <p>
-            I am 27 years old and currently residing in central Minnesota. Some
+            I am 28 years old and currently residing in central Minnesota. Some
             of the things I like to do when im not coding is maybe work on some
             rennovations to my home, get in some exercise or spend time at my
-            sisters farm. Most would describe me as laid back but I like to
-            think of myself as the hardest worker in the room. I always get
-            along with my peers and
+            sisters farm. Most would describe me as a pretty laid individual
+            back but I like to think of myself as the hardest worker in the
+            room. I always get along with my peers and can typically be a great
+            shoulder to lean on when someone needs some assistance. I pick up on
+            new things incredibly quick
           </p>
           <h3 className="about-title-1">Some of my skills</h3>
           <p>
-            I am 27 years old and currently residing in central Minnesota. Some
-            of the things I like to do when im not coding is maybe work on some
-            rennovations to my home, get in some exercise or spend time at my
-            sisters farm.
+            Currently I write my backend projects with Node.JS using various
+            dependincies such as Express and JSON Web Tokens. I mostly integrate
+            databases using MongoDB but I have also been experimeneting with
+            PostgreSQL. As for the frontend, I do pretty much all of my projects
+            in React.js with Javascript being my main language. I am familiar
+            with React Hooks, several types of CSS frameworks as well as GSAP
+            animations. A few other tools I use reguarly would inclu=de Postman,
+            MongoDb Compass, PG Admin and also a fee hosting sites like Heroku
+            and Netlify.
           </p>
           <h3 className="about-title-1">What am I currently working on?</h3>
           <p>
-            Rigth now I am building out a small eCommerce site using the MERN
-            stack, practicing integrating SQL databases with frontend UI's, and
-            as always, continuing to educate myself on modern technologies. Some
-            of my goals for this year are to learn python and next.js and
-            improve UI design to really take my fullstack development to the
-            next level.
+            Rigth now I am building out a small real-time chat application using
+            the MERN stack, practicing integrating SQL databases with frontend
+            UI's, and as always, continuing to educate myself on modern
+            technologies. Some of my goals for this year are to learn python,
+            next.js and improve upon my UI design skills so that I can really
+            take my fullstack development to the next level.
           </p>
         </div>
       </div>
