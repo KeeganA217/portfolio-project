@@ -6,6 +6,10 @@ const Projects = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    gsap.from(".page-title", {
+      opacity: 0,
+      duration: 2,
+    });
     gsap.from(".project-a", {
       opacity: 0,
       duration: 1.5,

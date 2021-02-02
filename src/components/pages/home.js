@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
+import Character from "../layout/Character";
 
 const Home = () => {
   useEffect(() => {
@@ -7,15 +9,15 @@ const Home = () => {
       y: 40,
       opacity: 0,
       duration: 0.7,
-      stagger: 0.3,
-      ease: "power1.out",
+      stagger: 0.2,
+      ease: "power1",
     });
     gsap.from(".home-image", {
       y: -80,
       rotate: 27,
       opacity: 0,
-      duration: 1.4,
-      ease: "power1.out",
+      duration: 1.6,
+      ease: "power1",
     });
   }, []);
 
@@ -34,10 +36,16 @@ const Home = () => {
         <div className="title-section">
           <span className="title-accent-2">Full Stack </span>
         </div>
-        <div className="title-section">developer.</div>
+        <div className="title-section-link title-section">
+          {" "}
+          <strong>
+            <Link to="/about">Lets Go!</Link>
+          </strong>
+        </div>
       </p>
+
       <div className="home-image">
-        <img src="./images/portfolio.jpg" alt="" />
+        <Character />
       </div>
     </div>
   );

@@ -7,6 +7,10 @@ const Home = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".page-title", {
+      opacity: 0,
+      duration: 2,
+    });
     gsap.from(skills.current, {
       opacity: 0,
       y: 50,

@@ -24,25 +24,17 @@ const Contact = () => {
   };
 
   const left = useRef(null);
-  const middle = useRef(null);
   const right = useRef(null);
 
   useEffect(() => {
-    gsap.from(left.current, {
+    gsap.from(".page-title", {
       opacity: 0,
-      duration: 1.9,
-      x: 200,
-      ease: "power1",
+      duration: 2,
     });
-    gsap.from(middle.current, {
+    gsap.from(".card", {
       opacity: 0,
       duration: 1.5,
-      y: -190,
-    });
-    gsap.from(right.current, {
-      opacity: 0,
-      duration: 1.9,
-      x: -200,
+      x: 200,
       ease: "power1",
     });
   }, []);
@@ -62,19 +54,20 @@ const Contact = () => {
             <p className="contact-paragraph">Keegan.Adams15@gmail.com</p>
             <h3 className="contact-header">Current City</h3>
             <p className="contact-paragraph">St. Cloud, MN</p>
+            <p>
+              {" "}
+              <a
+                href="https://github.com/KeeganA217"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github social"></i>
+              </a>
+              <a href="/#" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin social"></i>
+              </a>
+            </p>
           </div>
-        </div>
-        <div className="middle-div" ref={middle}>
-          <a
-            href="https://github.com/KeeganA217"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github social"></i>
-          </a>
-          <a href="/#" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin social"></i>
-          </a>
         </div>
         <div className="right-div" ref={right}>
           <p>...Or let me contact you!</p>
@@ -90,7 +83,7 @@ const Contact = () => {
             <input
               type="text"
               name="email"
-              placeholder="Email Address"
+              placeholder="Email"
               required
               className="input-item"
               autoComplete="chrome-off"

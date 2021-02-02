@@ -22,9 +22,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className="header" id="navabr">
       <div className="logo" ref={logo}>
-        <span className="initials">KA</span>
+        <span className="initials">Keegan Adams</span>
       </div>
       <ul>
         <li className="change">
@@ -40,6 +40,19 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
+
+        <li className="change">
+          <NavLink
+            to="/about"
+            activeStyle={{
+              fontWeight: "bold",
+              color: "black",
+              fontSize: "20px",
+            }}
+          >
+            About Me
+          </NavLink>
+        </li>
         <li className="change">
           <NavLink
             to="/projects"
@@ -51,18 +64,6 @@ const Navbar = () => {
             }}
           >
             View Projects
-          </NavLink>
-        </li>
-        <li className="change">
-          <NavLink
-            to="/about"
-            activeStyle={{
-              fontWeight: "bold",
-              color: "black",
-              fontSize: "20px",
-            }}
-          >
-            About Me
           </NavLink>
         </li>
         <li className="change">
