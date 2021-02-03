@@ -34,7 +34,7 @@ const Contact = () => {
     gsap.from(".card", {
       opacity: 0,
       duration: 1.5,
-      x: 200,
+      y: 200,
       ease: "power1",
     });
   }, []);
@@ -63,9 +63,9 @@ const Contact = () => {
               >
                 <i className="fab fa-github social"></i>
               </a>
-              <a href="/#" target="_blank" rel="noopener noreferrer">
+              {/* <a href="/#" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin social"></i>
-              </a>
+              </a> */}
             </p>
           </div>
         </div>
@@ -78,7 +78,6 @@ const Contact = () => {
               placeholder="Name"
               required
               className="input-item"
-              autoComplete="chrome-off"
             />
             <input
               type="text"
@@ -86,7 +85,6 @@ const Contact = () => {
               placeholder="Email"
               required
               className="input-item"
-              autoComplete="chrome-off"
             />
             <textarea
               name="message"

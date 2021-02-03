@@ -53,19 +53,21 @@ const Home = () => {
             back but I like to think of myself as the hardest worker in the
             room. I always get along with my peers and can typically be a great
             shoulder to lean on when someone needs some assistance. I pick up on
-            new things incredibly quick
+            new things rather quickly and I always look at criticism from others
+            as an opportunity for growth.
           </p>
           <h3 className="about-title-1">Some of my skills</h3>
           <p>
             Currently I write my backend projects with Node.JS using various
-            dependincies such as Express and JSON Web Tokens. I mostly integrate
-            databases using MongoDB but I have also been experimeneting with
-            PostgreSQL. As for the frontend, I do pretty much all of my projects
-            in React.js with Javascript being my main language. I am familiar
-            with React Hooks, several types of CSS frameworks as well as GSAP
-            animations. A few other tools I use reguarly would inclu=de Postman,
-            MongoDb Compass, PG Admin and also a fee hosting sites like Heroku
-            and Netlify.
+            dependincies, with Express and JSON Web Tokens to name a few. I
+            mostly integrate databases using MongoDB and Mongoose but I have
+            also been experimeneting with PostgreSQL. As for the frontend, I do
+            pretty much all of my projects in React.js with Javascript being my
+            main language for now. I am familiar with React Hooks, Redux,
+            Responsive design, several CSS libraries as well as GSAP animations.
+            A few other tools I use reguarly would include Postman, MongoDb
+            Compass, PG Admin, Git/Github and hosting sites like Heroku and
+            Netlify.
           </p>
           <h3 className="about-title-1">What am I currently working on?</h3>
           <p>
@@ -85,10 +87,10 @@ const Home = () => {
         <img src="/images/React.png" alt="React" className="icon" />
         <img src="/images/Node.png" alt="Node.js" className="icon" />
         <img src="/images/Mongo.png" alt="MongoDB" className="icon" />
+        <img src="/images/postgres.png" alt="PostgreSQL" className="icon" />
         <img src="/images/Bootstrap.png" alt="Bootstrap" className="icon" />
         <img src="/images/Materialize.png" alt="Materialize" className="icon" />
         <img src="/images/gsap.png" alt="Greensock" className="icon" />
-        <img src="/images/postgres.png" alt="PostgreSQL" className="icon" />
       </div>
     </div>
   );

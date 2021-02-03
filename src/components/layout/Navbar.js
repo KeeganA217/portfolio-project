@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <header className="header" id="navabr">
       <div className="logo" ref={logo}>
-        <span className="initials">Keegan Adams</span>
+        <span>Keegan Adams</span>
       </div>
       <ul>
         <li className="change">
@@ -34,7 +34,6 @@ const Navbar = () => {
             activeStyle={{
               fontWeight: "bold",
               color: "black",
-              fontSize: "20px",
             }}
           >
             Home
@@ -47,7 +46,6 @@ const Navbar = () => {
             activeStyle={{
               fontWeight: "bold",
               color: "black",
-              fontSize: "20px",
             }}
           >
             About Me
@@ -60,7 +58,6 @@ const Navbar = () => {
             activeStyle={{
               fontWeight: "bold",
               color: "black",
-              fontSize: "20px",
             }}
           >
             View Projects
@@ -72,12 +69,19 @@ const Navbar = () => {
             activeStyle={{
               fontWeight: "bold",
               color: "black",
-              fontSize: "20px",
             }}
           >
             Get in Touch
           </NavLink>
         </li>
+        <a
+          href="https://github.com/KeeganA217"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-icon"
+        >
+          <i className="fab fa-github"></i>
+        </a>
       </ul>
     </header>
   );
