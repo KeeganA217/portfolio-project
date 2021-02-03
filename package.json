@@ -20,11 +20,10 @@
     "react-transition-group": "^4.4.1"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "node /server",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
