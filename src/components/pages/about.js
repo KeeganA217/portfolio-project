@@ -60,8 +60,8 @@ const Home = () => {
           <p>
             Currently I write my backend projects with Node.JS using various
             dependincies, with Express and JSON Web Tokens to name a few. I
-            mostly integrate databases using MongoDB and Mongoose but I have
-            also been experimeneting with PostgreSQL. As for the frontend, I do
+            mostly integrate databases using MongoDB and Mongoose but I also
+            have experience with PostgreSQL and MySQL. As for the frontend, I do
             pretty much all of my projects in React.js with Javascript being my
             main language for now. I am familiar with React Hooks, Redux,
             Responsive design, several CSS libraries as well as GSAP animations.
