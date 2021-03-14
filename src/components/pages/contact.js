@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import emailjs from "emailjs-com";
 
@@ -23,9 +23,6 @@ const Contact = () => {
     e.target.reset();
   };
 
-  const left = useRef(null);
-  const right = useRef(null);
-
   useEffect(() => {
     gsap.from(".page-title", {
       opacity: 0,
@@ -45,7 +42,7 @@ const Contact = () => {
         <h1>Lets Get To Work!</h1>
       </div>
       <div className="card">
-        <div className="left-div" ref={left}>
+        <div className="left-div">
           <div className="contact-info">
             <i className="far fa-address-card contact"></i>
             <h3 className="contact-header">Phone Number</h3>
@@ -63,13 +60,10 @@ const Contact = () => {
               >
                 <i className="fab fa-github social"></i>
               </a>
-              {/* <a href="/#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin social"></i>
-              </a> */}
             </p>
           </div>
         </div>
-        <div className="right-div" ref={right}>
+        <div className="right-div">
           <p>...Or let me contact you!</p>
           <form onSubmit={sendEmail}>
             <input

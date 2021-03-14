@@ -114,13 +114,17 @@ const Projects = () => {
               <strong>Jabber</strong> - This is my current project and is being
               updated daily.
             </h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, rerum
-            aperiam! Ullam quae adipisci atque tempora quibusdam soluta
-            architecto distinctio a fugiat reiciendis non, placeat, possimus
-            perferendis commodi natus deleniti dignissimos odio, minus
-            voluptatibus veritatis consectetur fugit aspernatur enim? Quaerat,
-            suscipit? Fuga commodi repellat molestiae eveniet numquam illo quas.
-            Eligendi.
+            Jabber is an open discussion forum complete with user
+            registration/login and authorization/authentication. Once
+            registered, users can create new topics for discussion or post
+            comments on one that already exists. Users can even upload their own
+            image through their profile page. Users with admin access also have
+            the ability to remove individual comments or an entire topic
+            altogether. This full stack application is built with React as well
+            as node.js/express. I have used JSON web tokens for authorization
+            and authentication and bootstrap for styling. This app also uses
+            MySQL to store all of its data. State management is organized with
+            redux and I have also implemented react hooks.
           </p>
           <a
             href="https://github.com/KeeganA217/jabber-forum"

@@ -21,7 +21,7 @@ const Home = () => {
         trigger: "icon",
         toggleActions: "restart",
       },
-      y: 80,
+      y: 50,
       opacity: 0,
       duration: 2,
       ease: "elastic.out(1, 0.3)",

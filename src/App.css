@@ -140,8 +140,8 @@ h1 {
 .right-div {
   position: absolute;
   top: 280px;
-  left: 735px;
-  width: 485px;
+  right: 215px;
+  width: 550px;
   height: 450px;
   margin-bottom: 4rem;
   background-color: black;
