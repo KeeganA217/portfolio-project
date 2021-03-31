@@ -103,16 +103,15 @@ const Projects = () => {
       <section className="project project-b">
         <div className="project-left">
           <img
-            src="/images/Jabber.png"
-            alt="The Recipe Rolodex"
+            src="/images/jabber.png"
+            alt="Jabber"
             className="project-image"
           />
         </div>
         <div className="project-right">
           <p>
             <h3>
-              <strong>Jabber</strong> - This is my current project and is being
-              updated daily.
+              <strong>Jabber</strong>
             </h3>
             Jabber is an open discussion forum complete with user
             registration/login and authorization/authentication. Once
@@ -135,7 +134,7 @@ const Projects = () => {
             Source Code/README
           </a>
           <a
-            href="!#"
+            href="https://jabber-app.herokuapp.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="click"
@@ -190,7 +189,7 @@ const Projects = () => {
         <div className="project-right">
           <p>
             <h3>
-              <strong>Project 4</strong>
+              <strong>Project 4</strong> - Coming soon!
             </h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, rerum
             aperiam! Ullam quae adipisci atque tempora quibusdam soluta
