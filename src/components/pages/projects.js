@@ -103,7 +103,7 @@ const Projects = () => {
       <section className="project project-b">
         <div className="project-left">
           <img
-            src="/images/TeamSolve.png"
+            src="/images/jabber.png"
             alt="Jabber"
             className="project-image"
           />
