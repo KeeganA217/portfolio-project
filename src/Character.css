@@ -194,6 +194,7 @@
   background-color: hsl(27, 33%, 28%);
   border-radius: 0 0 100% 100%;
   margin-top: 265px;
+  box-shadow: 0px 30px 60px 14px rgba(63, 46, 31, 0.35);
 }
 
 .beard-corner {
