@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const skills = useRef(null);
@@ -55,7 +56,7 @@ const Home = () => {
             Responsive design, several CSS libraries as well as GSAP animations.
             A few other tools I use reguarly would include Postman, MongoDb
             Compass, PG Admin, Git/Github and hosting sites like Heroku and
-            Netlify. <a href="/contact">Contact Me</a>
+            Netlify. <Link to="/contact">Contact Me</Link>
           </p>
           <h3 className="about-title-1">What am I currently working on?</h3>
           <p>
@@ -65,7 +66,7 @@ const Home = () => {
             technologies. Some of my goals for this year are to learn C#,
             next.js and improve upon my UI design skills so that I can really
             take my fullstack development to the next level.{" "}
-            <a href="/projects">See Projects</a>
+            <Link to="/projects">See Projects</Link>
           </p>
           <h3 className="about-title-1">A little about me..</h3>
           <p>
