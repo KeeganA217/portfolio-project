@@ -46,39 +46,43 @@ const Home = () => {
       <div className="about-card-main">
         <div className="about-card">
           <h3 className="about-title-1">Some of my skills</h3>
-          <p>
-            Currently I write my backend projects with Node.JS using various
-            dependincies, with Express and JSON Web Tokens to name a few. I
-            mostly integrate databases using MongoDB and Mongoose but I also
-            have experience with PostgreSQL and MySQL. As for the frontend, I do
-            pretty much all of my projects in React.js with Javascript being my
-            main language for now. I am familiar with React Hooks, Redux,
-            Responsive design, several CSS libraries as well as GSAP animations.
-            A few other tools I use reguarly would include Postman, MongoDb
-            Compass, PG Admin, Git/Github and hosting sites like Heroku and
-            Netlify. <Link to="/contact">Contact Me</Link>
-          </p>
+          <ul className="skills-list">
+            <li>React.JS</li>
+            <li>React Hooks</li>
+            <li>Redux</li>
+            <li>Javascript</li>
+            <li>JSON/JSX</li>
+            <li>Bootstrap/Materialize</li>
+            <li>Node.JS</li>
+            <li>Express</li>
+            <li>MongoDB/Mongoose</li>
+            <li>PostgreSQL/PgAdmin</li>
+            <li>MySQL/MySQL Workbench</li>
+            <li>Git/Github</li>
+            <li>JSON Web Tokens</li>
+          </ul>
           <h3 className="about-title-1">What am I currently working on?</h3>
           <p>
-            Rigth now I am building out a small real-time chat application using
+            Right now I am building out a small real-time chat application using
             the MERN stack, practicing integrating SQL databases with frontend
             UI's, and as always, continuing to educate myself on modern
             technologies. Some of my goals for this year are to learn C#,
             next.js and improve upon my UI design skills so that I can really
             take my fullstack development to the next level.{" "}
-            <Link to="/projects">See Projects</Link>
+            <Link to="/projects">See Projects</Link> or{" "}
+            <Link to="/contact">Contact Me</Link>
           </p>
           <h3 className="about-title-1">A little about me..</h3>
           <p>
             I am 28 years old and currently residing in central Minnesota. Some
             of the things I like to do when im not coding is maybe work on some
             rennovations to my home, get in some exercise or spend time at my
-            sisters farm. Most would describe me as a pretty laid individual
-            back but I like to think of myself as the hardest worker in the
-            room. I always get along with my peers and can typically be a great
-            shoulder to lean on when someone needs some assistance. I pick up on
-            new things rather quickly and I always look at criticism from others
-            as an opportunity for growth.
+            sisters farm. I am very comfortable working in a remote enviromnet
+            if needed and I am also very used to collaborating with a team(s) of
+            people on every project. I always get along with my peers and can
+            typically be a great shoulder to lean on when someone needs some
+            assistance. I pick up on new things rather quickly and I always look
+            at criticism from others as an opportunity for growth.
           </p>
         </div>
       </div>
