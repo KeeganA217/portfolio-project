@@ -64,27 +64,17 @@ const Contact = () => {
           </div>
         </div>
         <div className="right-div">
-          <p>...Or let me contact you!</p>
+          <p style={{ fontWeight: "bolder" }}>...Or let me contact you!</p>
           <form onSubmit={sendEmail}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-              className="input-item"
-            />
-            <input
-              type="text"
-              name="email"
-              placeholder="Email"
-              required
-              className="input-item"
-            />
+            <label for="name">Name</label>
+            <input type="text" name="name" required className="input-item" />
+            <label for="email">Email</label>
+            <input type="text" name="email" required className="input-item" />
+            <label for="message">Message..</label>
             <textarea
               name="message"
               cols="30"
               rows="10"
-              placeholder="Message..."
               required
               className="input-item"
             ></textarea>

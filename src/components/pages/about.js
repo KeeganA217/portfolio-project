@@ -44,18 +44,6 @@ const Home = () => {
       </div>
       <div className="about-card-main">
         <div className="about-card">
-          <h3 className="about-title-1">A little about me..</h3>
-          <p>
-            I am 28 years old and currently residing in central Minnesota. Some
-            of the things I like to do when im not coding is maybe work on some
-            rennovations to my home, get in some exercise or spend time at my
-            sisters farm. Most would describe me as a pretty laid individual
-            back but I like to think of myself as the hardest worker in the
-            room. I always get along with my peers and can typically be a great
-            shoulder to lean on when someone needs some assistance. I pick up on
-            new things rather quickly and I always look at criticism from others
-            as an opportunity for growth.
-          </p>
           <h3 className="about-title-1">Some of my skills</h3>
           <p>
             Currently I write my backend projects with Node.JS using various
@@ -67,16 +55,29 @@ const Home = () => {
             Responsive design, several CSS libraries as well as GSAP animations.
             A few other tools I use reguarly would include Postman, MongoDb
             Compass, PG Admin, Git/Github and hosting sites like Heroku and
-            Netlify.
+            Netlify. <a href="/contact">Contact Me</a>
           </p>
           <h3 className="about-title-1">What am I currently working on?</h3>
           <p>
             Rigth now I am building out a small real-time chat application using
             the MERN stack, practicing integrating SQL databases with frontend
             UI's, and as always, continuing to educate myself on modern
-            technologies. Some of my goals for this year are to learn python,
+            technologies. Some of my goals for this year are to learn C#,
             next.js and improve upon my UI design skills so that I can really
-            take my fullstack development to the next level.
+            take my fullstack development to the next level.{" "}
+            <a href="/projects">See Projects</a>
+          </p>
+          <h3 className="about-title-1">A little about me..</h3>
+          <p>
+            I am 28 years old and currently residing in central Minnesota. Some
+            of the things I like to do when im not coding is maybe work on some
+            rennovations to my home, get in some exercise or spend time at my
+            sisters farm. Most would describe me as a pretty laid individual
+            back but I like to think of myself as the hardest worker in the
+            room. I always get along with my peers and can typically be a great
+            shoulder to lean on when someone needs some assistance. I pick up on
+            new things rather quickly and I always look at criticism from others
+            as an opportunity for growth.
           </p>
         </div>
       </div>
