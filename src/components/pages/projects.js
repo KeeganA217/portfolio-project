@@ -102,7 +102,11 @@ const Projects = () => {
       </section>
       <section className="project project-b">
         <div className="project-left">
-          <img src="/images/test.png" alt="Jabber" className="project-image" />
+          <img
+            src="/images/jabber-forum.png"
+            alt="Jabber"
+            className="project-image"
+          />
         </div>
         <div className="project-right">
           <p>
