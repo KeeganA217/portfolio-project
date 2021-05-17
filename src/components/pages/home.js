@@ -42,7 +42,7 @@ const Home = () => {
         <div className="title-section-link title-section">
           {" "}
           <strong>
-            <Link to="/about">Lets Go!</Link>
+            <Link to="/about">Explore...</Link>
           </strong>
         </div>
       </p>
